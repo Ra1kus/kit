@@ -1,0 +1,93 @@
+body {
+    font: 400 14px 'Open Sans', sans-serif;;
+}
+
+h1 {
+    font-size: 34px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.container {
+    width: 640px;
+    height: 640px;
+    background: url('./logo.jpg');
+    margin: 0 auto;
+    position: relative;
+}
+
+.block {
+    width: 100px;
+    height: 100px;
+    border: 3px solid #ccc;
+    position: absolute;
+    z-index: 2;
+}
+
+.block:hover {
+    border-color: #000;
+}
+
+.block-1 {
+    width: 110px;
+    height: 115px;
+    left: 75px;
+    top: 85px;
+    cursor: pointer;
+}
+
+.block-2 {
+    right: 185px;
+    top: 285px;
+}
+
+.block-3 {
+    right: 130px;
+    top: 190px;
+}
+
+.block-4 {
+    right: 25px;
+    top: 230px;
+}
+
+.modal-overlay {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 998;
+    background: rgba(0, 0, 0, .5);
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.modal {
+    position: fixed;
+    left: 50%;
+    top: 100px;
+    z-index: 999;
+    transform: translateX(-50%);
+    border-radius: 15px;
+    background: #ffffff;
+    width: 300px;
+    display: none;
+}
+
+.close-modal {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    font-size: 20px;
+    width: 20px;
+    height: 20px;
+    background: url('./close.png') 50% 50% / cover;
+}
+
+.modal-message {
+    text-align: center;
+    padding: 100px 20px;
+    font-weight: 700;
+    font-size: 24px;
+    color: #000000;
+}
